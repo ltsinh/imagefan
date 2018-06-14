@@ -36,6 +36,20 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# A gem to automate using jQuery with Rails
+gem 'jquery-rails'
+
+# This gem provides popper.js assets as a Ruby gem
+gem 'popper_js', '~> 1.12.9'
+
+# Bootstrap 4 Ruby Gem for Rails / Sprockets and Compass.
+gem 'bootstrap', '~> 4.1.1'
+
+# A client-side library to make absolutely positioned elements attach to elements in the page efficiently.
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
